@@ -1,0 +1,101 @@
+    #calculator-container{
+        display: grid;
+        width: 500px;
+        height: 600px;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas: 
+            "display"
+            "buttons";
+        grid-gap: 10px;
+        margin: 1px solid;
+    }
+
+    #display {
+        grid-area: display;
+        background-color: aqua;
+        border: 1px solid;
+    }
+
+    #buttons-container{
+        grid-area: buttons;
+        border: 1px solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "clear  div     mul     subs"
+            "seven  eight   nine    plus"
+            "four   five    six     plus"
+            "one    two     three   equal"
+            "cero   cero    dot     equal";
+        grid-gap: 10px;
+    }
+
+    .button{
+        border-radius: 5%;
+        font-size: 2rem;
+    }
+
+    #add{
+        grid-area: plus;
+    }
+
+    #sub{
+        grid-area: subs;
+    }
+
+    #mul{
+        grid-area: mul;
+    }
+
+    #div{
+        grid-area: div;
+    }
+
+    #clear{
+        grid-area: clear;
+    }
+
+    #equal{
+        grid-area: equal;
+    }
+
+    #nine{
+        grid-area: nine;
+    }
+
+    #eight{
+        grid-area: eight;
+    }
+
+    #seven{
+        grid-area: seven;
+    }
+
+    #six{
+        grid-area: six;
+    }
+
+    #five{
+        grid-area: five;
+    }
+
+    #four{
+        grid-area: four;
+    }
+
+    #three{
+        grid-area: three;
+    }
+
+    #two{
+        grid-area: two;
+    }
+
+    #one{
+        grid-area: one;
+    }
+
+    #zero{
+        grid-area: cero;
+    }
